@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Garagem - Horizon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="horizon-header">
+        <h1>GARAGEM</h1>
+    </header>
+
+    <main class="garagem-container">
+        
+        <!-- Cartão do Carro 1 -->
+        <div class="card-perspectiva">
+            <div class="carro-card" onclick="virarCartao(this)">
+                
+                <!-- Face da Frente (Carro de Lado) -->
+                <div class="face frente">
+                    <div class="fabricante">NISSAN</div>
+                    <img src="img/skyline-r34-side.png" alt="Skyline R34 Lado" class="img-carro">
+                    <div class="nome-carro">SKYLINE GT-R R-34</div>
+                    <div class="ano-carro">2002</div>
+                </div>
+
+                <!-- Face de Trás (Carro de Frente + Status) -->
+                <div class="face tras">
+                    <img src="img/skyline-r34-front.avif" alt="Skyline R34 Frente" class="img-carro-frente">
+                    
+                    <div class="status-container">
+                        <div class="status-linha">
+                            <span>POTÊNCIA</span>
+                            <div class="barra-fundo"><div class="barra-preenchimento" style="width: 28%;"></div></div>
+                            <span class="nota">280 cv</span>
+                        </div>
+                        <div class="status-linha">
+                            <span>VELOCIDADE</span>
+                            <div class="barra-fundo"><div class="barra-preenchimento" style="width: 27%;"></div></div>
+                            <span class="nota">265 km/h</span>
+                        </div>
+                        <div class="status-linha">
+                            <span>ACELERAÇÃO (0-100)</span>
+                            <div class="barra-fundo"><div class="barra-preenchimento" style="width: 5%;"></div></div>
+                            <span class="nota">4,6 s</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-perspectiva">
+            <div class="carro-card" onclick="virarCartao(this)">
+                
+                <!-- Face da Frente (Carro de Lado) -->
+                <div class="face frente">
+                    <div class="fabricante">MITSUBISHI</div>
+                    <img src="img/eclipse-side.png" alt="Mitsubishi Eclipse Lado" class="img-carro">
+                    <div class="nome-carro">ECLIPSE</div>
+                    <div class="ano-carro">1995</div>
+                </div>
+
+                <!-- Face de Trás (Carro de Frente + Status) -->
+                <div class="face tras">
+                    <img src="img/eclipse-front.jpg" alt="Mitsubishi Eclipse Frente" class="img-carro-frente">
+                    
+                    <div class="status-container">
+                        <div class="status-linha">
+                            <span>POTÊNCIA</span>
+                            <div class="barra-fundo"><div class="barra-preenchimento" style="width: 22%;"></div></div>
+                            <span class="nota">213 cv</span>
+                        </div>
+                        <div class="status-linha">
+                            <span>VELOCIDADE</span>
+                            <div class="barra-fundo"><div class="barra-preenchimento" style="width: 23%;"></div></div>
+                            <span class="nota">225 km/h</span>
+                        </div>
+                        <div class="status-linha">
+                            <span>ACELERAÇÃO (0-100)</span>
+                            <div class="barra-fundo"><div class="barra-preenchimento" style="width: 7%;"></div></div>
+                            <span class="nota">7,1 s</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card-perspectiva">
+            <div class="carro-card" onclick="virarCartao(this)">
+                
+                <!-- Face da Frente (Carro de Lado) -->
+                <div class="face frente">
+                    <div class="fabricante">TOYOTA</div>
+                    <img src="img/supra-mk4-side.jpg" alt="Toyota Supra MK-4 Lado" class="img-carro">
+                    <div class="nome-carro">SUPRA MK-4</div>
+                    <div class="ano-carro">1994</div>
+                </div>
+
+                <!-- Face de Trás (Carro de Frente + Status) -->
+                <div class="face tras">
+                    <img src="img/supra-mk4-front.jpg" alt="Toyota Supra MK-4 Frente" class="img-carro-frente">
+                    
+                    <div class="status-container">
+                        <div class="status-linha">
+                            <span>POTÊNCIA</span>
+                            <div class="barra-fundo"><div class="barra-preenchimento" style="width: 33%;"></div></div>
+                            <span class="nota">326 cv</span>
+                        </div>
+                        <div class="status-linha">
+                            <span>VELOCIDADE</span>
+                            <div class="barra-fundo"><div class="barra-preenchimento" style="width: 25%;"></div></div>
+                            <span class="nota">250 km/h</span>
+                        </div>
+                        <div class="status-linha">
+                            <span>ACELERAÇÃO (0-100)</span>
+                            <div class="barra-fundo"><div class="barra-preenchimento" style="width: 5%;"></div></div>
+                            <span class="nota">4,6 s</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card-perspectiva">
+            <div class="carro-card" onclick="virarCartao(this)">
+                
+                <!-- Face da Frente (Carro de Lado) -->
+                <div class="face frente">
+                    <div class="fabricante">HONDA</div>
+                    <img src="img/s2000-side.png" alt="Honda s2000 Lado" class="img-carro">
+                    <div class="nome-carro">S2000</div>
+                    <div class="ano-carro">2000</div>
+                </div>
+
+                <!-- Face de Trás (Carro de Frente + Status) -->
+                <div class="face tras">
+                    <img src="img/s2000-front.jpg" alt="Honda s2000 Frente" class="img-carro-frente">
+                    
+                    <div class="status-container">
+                        <div class="status-linha">
+                            <span>POTÊNCIA</span>
+                            <div class="barra-fundo"><div class="barra-preenchimento" style="width: 37%;"></div></div>
+                            <span class="nota">370 cv</span>
+                        </div>
+                        <div class="status-linha">
+                            <span>VELOCIDADE</span>
+                            <div class="barra-fundo"><div class="barra-preenchimento" style="width: 25%;"></div></div>
+                            <span class="nota">248 km/h</span>
+                        </div>
+                        <div class="status-linha">
+                            <span>ACELERAÇÃO (0-100)</span>
+                            <div class="barra-fundo"><div class="barra-preenchimento" style="width: 6%;"></div></div>
+                            <span class="nota">5,2 s</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card-perspectiva">
+            <div class="carro-card" onclick="virarCartao(this)">
+                
+                <!-- Face da Frente (Carro de Lado) -->
+                <div class="face frente">
+                    <div class="fabricante">NISSAN</div>
+                    <img src="img/350z-side.png" alt="Nissan 350z Lado" class="img-carro">
+                    <div class="nome-carro">350Z</div>
+                    <div class="ano-carro">2003</div>
+                </div>
+
+                <!-- Face de Trás (Carro de Frente + Status) -->
+                <div class="face tras">
+                    <img src="img/350z-front.png" alt="Nissan 350z Frente" class="img-carro-frente">
+                    
+                    <div class="status-container">
+                        <div class="status-linha">
+                            <span>POTÊNCIA</span>
+                            <div class="barra-fundo"><div class="barra-preenchimento" style="width: 40%;"></div></div>
+                            <span class="nota">400 cv</span>
+                        </div>
+                        <div class="status-linha">
+                            <span>VELOCIDADE</span>
+                            <div class="barra-fundo"><div class="barra-preenchimento" style="width: 38%;"></div></div>
+                            <span class="nota">372 km/h</span>
+                        </div>
+                        <div class="status-linha">
+                            <span>ACELERAÇÃO (0-100)</span>
+                            <div class="barra-fundo"><div class="barra-preenchimento" style="width: 4%;"></div></div>
+                            <span class="nota">3,76 s</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card-perspectiva">
+            <div class="carro-card" onclick="virarCartao(this)">
+                
+                <!-- Face da Frente (Carro de Lado) -->
+                <div class="face frente">
+                    <div class="fabricante">DODGE</div>
+                    <img src="img/charger-side.png" alt="Dodge Charger Lado" class="img-carro">
+                    <div class="nome-carro">CHARGER</div>
+                    <div class="ano-carro">1970</div>
+                </div>
+
+                <!-- Face de Trás (Carro de Frente + Status) -->
+                <div class="face tras">
+                    <img src="img/charger-front.png" alt="Dodge Charger Frente" class="img-carro-frente">
+                    
+                    <div class="status-container">
+                        <div class="status-linha">
+                            <span>POTÊNCIA</span>
+                            <div class="barra-fundo"><div class="barra-preenchimento" style="width: 90%;"></div></div>
+                            <span class="nota">900 cv</span>
+                        </div>
+                        <div class="status-linha">
+                            <span>VELOCIDADE</span>
+                            <div class="barra-fundo"><div class="barra-preenchimento" style="width: 30%;"></div></div>
+                            <span class="nota">300 km/h</span>
+                        </div>
+                        <div class="status-linha">
+                            <span>ACELERAÇÃO (0-100)</span>
+                            <div class="barra-fundo"><div class="barra-preenchimento" style="width: 4%;"></div></div>
+                            <span class="nota">3,5 s</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card-perspectiva">
+            <div class="carro-card" onclick="virarCartao(this)">
+                
+                <!-- Face da Frente (Carro de Lado) -->
+                <div class="face frente">
+                    <div class="fabricante">MAZDA</div>
+                    <img src="img/rx7-side.jpg" alt="Mazda RX7 Lado" class="img-carro">
+                    <div class="nome-carro">RX7</div>
+                    <div class="ano-carro">1992</div>
+                </div>
+
+                <!-- Face de Trás (Carro de Frente + Status) -->
+                <div class="face tras">
+                    <img src="img/rx7-front.jpg" alt="Mazda RX7 Frente" class="img-carro-frente">
+                    
+                    <div class="status-container">
+                        <div class="status-linha">
+                            <span>POTÊNCIA</span>
+                            <div class="barra-fundo"><div class="barra-preenchimento" style="width: 28%;"></div></div>
+                            <span class="nota">280 cv</span>
+                        </div>
+                        <div class="status-linha">
+                            <span>VELOCIDADE</span>
+                            <div class="barra-fundo"><div class="barra-preenchimento" style="width: 25%;"></div></div>
+                            <span class="nota">250 km/h</span>
+                        </div>
+                        <div class="status-linha">
+                            <span>ACELERAÇÃO (0-100)</span>
+                            <div class="barra-fundo"><div class="barra-preenchimento" style="width: 6%;"></div></div>
+                            <span class="nota">5,3 s</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card-perspectiva">
+            <div class="carro-card" onclick="virarCartao(this)">
+                
+                <!-- Face da Frente (Carro de Lado) -->
+                <div class="face frente">
+                    <div class="fabricante">BMW</div>
+                    <img src="img/bmw-m3-side.png" alt="BMW M3 GTR Lado" class="img-carro">
+                    <div class="nome-carro">M3 GTR</div>
+                    <div class="ano-carro">2001</div>
+                </div>
+
+                <!-- Face de Trás (Carro de Frente + Status) -->
+                <div class="face tras">
+                    <img src="img/bmw-m3-front.png" alt="BMW M3 GTR Frente" class="img-carro-frente">
+                    
+                    <div class="status-container">
+                        <div class="status-linha">
+                            <span>POTÊNCIA</span>
+                            <div class="barra-fundo"><div class="barra-preenchimento" style="width: 46%;"></div></div>
+                            <span class="nota">460 cv</span>
+                        </div>
+                        <div class="status-linha">
+                            <span>VELOCIDADE</span>
+                            <div class="barra-fundo"><div class="barra-preenchimento" style="width: 37%;"></div></div>
+                            <span class="nota">370 km/h</span>
+                        </div>
+                        <div class="status-linha">
+                            <span>ACELERAÇÃO (0-100)</span>
+                            <div class="barra-fundo"><div class="barra-preenchimento" style="width: 4%;"></div></div>
+                            <span class="nota">3,6 s</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

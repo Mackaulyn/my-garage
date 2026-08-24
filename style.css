@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    background-image: radial-gradient(circle at center, #1a1a1a 0%, #000000 100%);
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.horizon-header {
+    padding: 40px 50px;
+}
+
+.horizon-header h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.garagem-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 50px;
+    flex-wrap: wrap;
+}
+
+.card-perspectiva {
+    perspective: 1200px;
+    width: 350px;
+    height: 450px;
+}
+
+.carro-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efeito elástico suave */
+    cursor: pointer;
+}
+
+.carro-card.virado {
+    transform: rotateY(180deg);
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Esconde o verso quando não está virado */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.tras {
+    transform: rotateY(180deg);
+    background: linear-gradient(135deg, rgba(20,20,20,0.9), rgba(5,5,5,0.9));
+    border-left: 4px solid #ff0055; /* Detalhe neon */
+}
+
+.fabricante {
+    font-size: 1rem;
+    color: #888;
+    letter-spacing: 2px;
+}
+
+.nome-carro {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.ano-carro {
+    font-size: 1.2rem;
+    color: #ff0055;
+    font-weight: 900;
+}
+
+.img-carro {
+    width: calc(100% + 50px); 
+    margin-left: -25px;
+    height: 200px;
+    object-fit: contain;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.img-carro-frente {
+    width: calc(100% + 50px);
+    margin-left: -25px;
+    margin-top: -25px; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 12px 12px 0 0; 
+    filter: drop-shadow(0 10px 10px rgba(0,0,0,0.8));
+}
+
+.status-container {
+    margin-top: auto;
+}
+
+.status-linha {
+    margin-bottom: 15px;
+}
+
+.status-linha span {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.status-linha .nota {
+    float: right;
+    color: #ff0055;
+}
+
+.barra-fundo {
+    width: 100%;
+    height: 8px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 4px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.barra-preenchimento {
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
